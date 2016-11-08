@@ -1,0 +1,20 @@
+<div ng-controller="mainCtrl" class="center-text">
+	{{IDs}}
+	<div class="front-content container" style="clear:both; background-color:#fff7e6; padding-top:20px">
+		
+		<div class="front-users-info col-md-3" style="background-color:#aaaff3">
+			<ul ng-repeat="user in allUsers">
+				<a ui-sref=".userInfo({userID: user['id'] })"> {{user['login']}} - {{user['id']}} </a>
+			</ul>
+			<div style="text-align:center">
+				<a class="btn btn-danger" href="" ng-click="moreUsers()">Load more</a>
+			</div>
+		</div>
+
+
+		<div class="front-user col-md-9">
+			<div ui-view></div>
+		</div>
+	</div>
+	
+</div>

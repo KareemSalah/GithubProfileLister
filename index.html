@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
+<!-- 	<script src="http://code.angularjs.org/1.2.13/angular.js"></script> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script> -->
+    <script type="text/javascript" src="public/js/lib/angular.min.js"></script>
+	<script type="text/javascript" src="public/js/lib/angular-ui-router.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+	<script type="text/javascript" src="public/js/gUsers.js"></script>
+</head>
+<body ng-app="gUsers">
+	<nav class="navbar navbar-inverse" role="navigation">
+    	<div class="header col-md-12" style="margin-top:20px">
+			<div class="col-md-6">
+				<img class="pull-right" src="public/img/github-sociocon.png" style="max-height:70px">
+			</div>
+			<div class="col-md-6">
+				<h1 class="pull-left" style="text-align:center; color:white">
+					Github Users
+				</h1>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div ui-view></div>
+	</div>
+</body>
+</html>
